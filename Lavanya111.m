@@ -1,5 +1,5 @@
 % Load and preprocess the data
-data = imageDatastore('C:\Users\chetan\Documents\MATLAB\lavanya\model training\retinopathi', 'IncludeSubfolders', true, 'LabelSource', 'foldernames');
+data = imageDatastore('C:\Users\Lavanya\Documents\MATLAB\lavanya\model training\retinopathi', 'IncludeSubfolders', true, 'LabelSource', 'foldernames');
 data.ReadFcn = @preprocessImages; % Define your own preprocessing function
 
 % Split the dataset into training, validation, and testing sets
